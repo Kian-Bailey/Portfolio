@@ -9,9 +9,32 @@ body {
     text-align: center;
 }
 
+p {
+    font-size: 16px;
+}
+
+h1, h2, h3 {
+    color: #ffa500;
+}
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+}
+h3 {
+    font-size: 24px;
+}
+
+
 section {
     padding: 20px;
     margin: auto;
+}
+
+body section:nth-child(odd) {
+    background-color: #042a51;
 }
 
 .card {
@@ -38,30 +61,23 @@ section {
     padding: 20px;
 }
 
-.skills h2,
-.education h2,
-.contact h2,
-.projects h2 {
-    color: #ffa500;
-    /* Orange accents */
-}
-
 .skills-container {
     display: flex;
-
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .skills-container > div {
-    width: 50%;
-    flex-grow: 1;
+    max-width: 940px;
     padding: 20px;
+    flex-grow: 1;
 }
 
 .contact form {
     display: flex;
     flex-direction: column;
     max-width: 600px;
-    margin: auto;
+    margin: auto;;
 }
 
 .contact form input,
@@ -71,23 +87,32 @@ section {
     border: 1px solid #ccc;
     border-radius: 4px;
     color: #333;
+    font-family: 'Montserrat', Arial, sans-serif;
     /* Dark text color for inputs */
+}
+
+.contact form textarea[name="message"] {
+    min-height: 200px;
 }
 
 .contact form button {
     padding: 10px;
     background-color: #ffa500;
     /* Orange button */
-    color: white;
+    color: #333;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding:20px;
 }
 
 .contact form button:hover {
     background-color: #ff8c00;
-    /* Darker orange on hover */
 }
 
 .icon {
@@ -110,11 +135,15 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s;
     color: #333;
-    /* Dark text color for chips */
+    font-size:14px;
 }
 
 .chip:hover {
     background-color: #f0f0f0;
+}
+
+.chip:hover .icon {
+    color: #ff8c00;
 }
 
 .chip .icon {
@@ -124,8 +153,13 @@ section {
 /* Tabs container */
 .tabs {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    margin: 24px auto;
 }
 
 .tab {
@@ -133,20 +167,22 @@ section {
     border: 2px solid #ccc;
     border-radius: 8px;
     cursor: pointer;
-    margin: 0 10px;
     padding: 10px;
-    width: 200px; /* Ensure all tabs are the same size */
+    width: 20%; /* Ensure all tabs are the same size */
     height: 100px; /* Ensure all tabs are the same size */
     display: flex;
     align-items: center;
     justify-content: center;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    max-width: 200px;
+    min-width: 150px;
 }
 
 .tab img {
     max-width: 80%;
     max-height: 80%;
     object-fit: contain; /* Ensure logos fit properly */
+    transition: 0.3s ease all;
 }
 
 .tab:hover {
@@ -156,32 +192,43 @@ section {
 .tab.active {
     background-color: orange; /* Change to orange when active */
     border-color: orange;
+
+}
+
+.tab.active img {
+    filter: brightness(0);
 }
 
 /* Tab content */
 .tab-content {
     display: none;
     text-align: center;
-max-width: 1200px;
+    max-width: 1200px;
     margin:auto;
     background-color: #fff;
-    display: flex;
     border-radius: 16px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap-reverse;
 }
 
 .tab-content > div {
-    width: 50%;
+    width: 40%;
     flex-grow: 1;
-    padding: 20px;;
+    padding: 20px;
+    min-width: 300px;
 }
+
+.project-image-container {
+    display: flex;
+}
+
 .tab-content img {
     max-width: 100%;
     border-radius: 8px;
 }
 
 .tab-content h3 {
-    color: #001f3f;
+    color: #042a51;
     /* Dark navy blue */
 }
 .tab-content p {
@@ -225,4 +272,53 @@ button.prev {
 
 button.next {
     right: 10px;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.icon {
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.icon:hover {
+    color: #ff8c00;
+}
+
+.client-logos {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    margin: 24px auto;
+}
+.client-logo {
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px; /* Ensure all tabs are the same size */
+    height: 100px; /* Ensure all tabs are the same size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    max-width: 100%;
+    min-width: 150px;
+}
+
+.client-logo img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
 }

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <section class="about">
+        <h1>Hi, I'm John Doe</h1>
+        <h2>Web developer based in Manchester with expertise in WordPress and front-end development.</h2>
+        <p>Over 3 years of commercial experience in the industry, delivering varied high-quality products with a strong
+            focus on user experience and accessibility.</p>
+    </section>
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div>
+                <h3>Technical Skills</h3>
+                <div class="chips">
+                    <div class="chip"><i class="fab fa-html5 icon"></i>HTML</div>
+                    <div class="chip"><i class="fab fa-css3-alt icon"></i>CSS</div>
+                    <div class="chip"><i class="fab fa-js icon"></i>JavaScript</div>
+                    <div class="chip"><i class="fab fa-php icon"></i>PHP</div>
+                    <div class="chip"><i class="fab fa-wordpress icon"></i>WordPress</div>
+                    <div class="chip"><i class="fab fa-vuejs icon"></i>Vue</div>
+                    <div class="chip"><i class="fas fa-code icon"></i>jQuery</div>
+                    <div class="chip"><i class="fab fa-github icon"></i>Git/GitHub</div>
+                    <div class="chip"><i class="fas fa-search icon"></i>SEO</div>
+                    <div class="chip"><i class="fas fa-server icon"></i>cPanel</div>
+                    <div class="chip"><i class="fas fa-file-upload icon"></i>FTP</div>
+                    <div class="chip"><i class="fas fa-image icon"></i>Photoshop</div>
+                    <div class="chip"><i class="fas fa-drafting-compass icon"></i>Figma</div>
+                    <div class="chip"><i class="fas fa-envelope icon"></i>Mailchimp</div>
+                    <div class="chip"><i class="fas fa-object-group icon"></i>OOP (VB.NET, C#)</div>
+                    <div class="chip"><i class="fas fa-table icon"></i>Excel</div>
+                    <div class="chip"><i class="fas fa-chart-line icon"></i>Google Data Studio</div>
+                    <div class="chip"><i class="fas fa-database icon"></i>CRM Systems</div>
+                </div>
+            </div>
+            <div>
+                <h3>Soft Skills</h3>
+                <div class="chips">
+                    <div class="chip"><i class="fas fa-lightbulb icon"></i>Problem Solving</div>
+                    <div class="chip"><i class="fas fa-brain icon"></i>Critical thinking & analysis</div>
+                    <div class="chip"><i class="fas fa-comments icon"></i>Communication</div>
+                    <div class="chip"><i class="fas fa-users icon"></i>Teamwork & collaboration</div>
+                    <div class="chip"><i class="fas fa-paint-brush icon"></i>Creativity</div>
+                    <div class="chip"><i class="fas fa-clock icon"></i>Time Management</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="tabs">
+            <button class="tab active" data-tab="project1">
+                <img src="/assets/mmu-logo.png" alt="Digital Skills Hub Logo" class="tab-icon">
+            </button>
+            <button class="tab" data-tab="project2">
+                <img src="/assets/mccallum-logo.png" alt="McCallum Logo" class="tab-icon">
+            </button>
+            <button class="tab" data-tab="project3">
+                <img src="/assets/sian-logo.png" alt="Sian Reeves Logo" class="tab-icon">
+            </button>
+            <button class="tab" data-tab="project4">
+                <img src="/assets/sf-logo.png" alt="SharpFutures Logo" class="tab-icon">
+            </button>
+            <button class="tab" data-tab="project5">
+                <img src="/assets/screen-logo.png" alt="Screen Manchester Logo" class="tab-icon">
+            </button>
+        </div>
+
+        <div class="tab-content active" id="project1">
+            <div class="project-image-container">
+                <div class="gallery">
+                    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                    <div class="slides">
+                        <img src="/assets/mmu-home.jpg" alt="Screenshot 1">
+                        <img src="/assets/mmu-dashboard.jpg" alt="Screenshot 2" style="display: none;">
+                        <img src="/assets/mmu-course.jpg" alt="Screenshot 3" style="display: none;">
+                    </div>
+                    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                </div>
+            </div>
+            <div class="project-content">
+                <h3>Digital Skills Hub</h3>
+                <div class="icons">
+                    <i class="fab fa-wordpress icon" title="WordPress"></i>
+                    <i class="fab fa-php icon" title="PHP"></i>
+                    <i class="fab fa-html5 icon" title="HTML"></i>
+                </div>
+                <p>Developed a WordPress site for Manchester Metropolitan University, focusing on user experience and
+                    accessibility. Implemented custom themes and plugins to enhance functionality.</p>
+            </div>
+        </div>
+
+        <div class="tab-content" id="project2">
+            <div class="project-image-container">
+                <div class="gallery">
+                    <button class="prev">&#10094;</button>
+                    <div class="slides">
+                        <img src="/assets/mccallum-home.jpg" alt="McCallum Project Screenshot">
+                        <img src="/assets/mccallum-portfolio.jpg" alt="McCallum Project Screenshot"
+                            style="display: none;">
+                        <img src="/assets/mccallum-casestudy.jpg" alt="McCallum Project Screenshot"
+                            style="display: none;">
+                    </div>
+                    <button class="next">&#10095;</button>
+                </div>
+            </div>
+            <div class="project-content">
+                <h3>McCallum</h3>
+                <div class="icons">
+                    <i class="fab fa-react icon" title="React"></i>
+                    <i class="fab fa-node icon" title="Node.js"></i>
+                </div>
+                <p>Developed a modern web application for McCallum, focusing on scalability and performance using React
+                    and Node.js.</p>
+            </div>
+        </div>
+
+        <div class="tab-content" id="project3">
+            <div class="project-image-container">
+                <div class="gallery">
+                    <button class="prev">&#10094;</button>
+                    <div class="slides">
+                        <img src="/assets/sian-home.jpg" alt="Sian Reeves Project Screenshot">
+                        <img src="/assets/sian-acting.jpg" alt="Sian Reeves Project Screenshot" style="display: none;">
+                        <img src="/assets/sian-album.jpg" alt="Sian Reeves Project Screenshot" style="display: none;">
+                    </div>
+                    <button class="next">&#10095;</button>
+                </div>
+            </div>
+            <div class="project-content">
+                <h3>Sian Reeves</h3>
+                <div class="icons">
+                    <i class="fab fa-wordpress icon" title="WordPress"></i>
+                    <i class="fab fa-css3-alt icon" title="CSS"></i>
+                </div>
+                <p>Created a personal portfolio website for Sian Reeves, showcasing her work and achievements with a
+                    clean and elegant design.</p>
+            </div>
+        </div>
+
+        <div class="tab-content" id="project4">
+            <div class="project-image-container">
+                <img src="/assets/sf-home.jpg" alt="SharpFutures Project Screenshot">
+            </div>
+            <div class="project-content">
+                <h3>SharpFutures</h3>
+                <div class="icons">
+                    <i class="fab fa-vuejs icon" title="Vue.js"></i>
+                    <i class="fab fa-laravel icon" title="Laravel"></i>
+                </div>
+                <p>Developed a web platform for SharpFutures to manage creative projects and collaborations using Vue.js
+                    and Laravel.</p>
+            </div>
+        </div>
+
+        <div class="tab-content" id="project5">
+            <div class="project-image-container">
+                <div class="gallery">
+                    <button class="prev">&#10094;</button>
+                    <div class="slides">
+                        <img src="/assets/screen-home.jpg" alt="Screen Manchester Project Screenshot">
+                        <img src="/assets/screen-lotm.jpg" alt="Screen Manchester Project Screenshot"
+                            style="display: none;">
+                        <img src="/assets/screen-fotm.jpg" alt="Screen Manchester Project Screenshot"
+                            style="display: none;">
+                    </div>
+                    <button class="next">&#10095;</button>
+                </div>
+            </div>
+            <div class="project-content">
+                <h3>Screen Manchester</h3>
+                <div class="icons">
+                    <i class="fab fa-bootstrap icon" title="Bootstrap"></i>
+                    <i class="fab fa-js icon" title="JavaScript"></i>
+                </div>
+                <p>Designed and developed a responsive website for Screen Manchester, highlighting their services and
+                    portfolio.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="clients">
+        <h2>Clients</h2>
+        <div class="client-logos">
+            <a href="https://www.mmu.ac.uk/" class="client-logo">
+                <img src="/assets/mmu-logo.png" alt="MMU Logo">
+            </a>
+            <a href="https://www.mccallum.tv/" class="client-logo">
+                <img src="/assets/mccallum-logo.png" alt="McCallum Logo">
+            </a>
+            <a href="https://www.sianreeves.com/" class="client-logo">
+                <img src="/assets/sian-logo.png" alt="Sian Reeves Logo">
+            </a>
+            <a href="https://www.sharpfutures.org.uk/" class="client-logo">
+                <img src="/assets/sf-logo.png" alt="SharpFutures Logo">
+            </a>
+            <a href="https://www.screenmanchester.com/" class="client-logo">
+                <img src="/assets/screen-logo.png" alt="Screen Manchester Logo">
+            </a>
+            <a href="https://www.ourpass.co.uk/" class="client-logo">
+                <img src="/assets/ourpass-logo.png" alt="Our Pass Logo">
+            </a>
+            <a href="https://www.gov.uk/government/organisations/department-for-work-pensions" class="client-logo">
+                <img src="/assets/dwp-logo.png" alt="DWP Logo">
+            </a>
+            <a href="https://www.thesharpproject.co.uk/" class="client-logo">
+                <img src="/assets/tsp-logo.png" alt="The Sharp Project Logo">
+            </a>
+            <a href="https://www.spacestudiosmanchester.co.uk/" class="client-logo">
+                <img src="/assets/ssm-logo.png" alt="Space Studios Logo">
+            </a>
+            <a href="https://www.uk.coop/" class="client-logo">
+                <img src="/assets/coop-logo.png" alt="Co-op Logo">
+            </a>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</body>
+
+</html>

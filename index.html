@@ -33,7 +33,7 @@
                     <div class="chip"><i class="fab fa-js icon"></i>JavaScript</div>
                     <div class="chip"><i class="fab fa-php icon"></i>PHP</div>
                     <div class="chip"><i class="fab fa-wordpress icon"></i>WordPress</div>
-                    <div class="chip"><i class="fab fa-vuejs icon"></i>Vue</div>
+                    <div class="chip"><i class="fab fa-vuejs icon"></i>Vue.js</div>
                     <div class="chip"><i class="fas fa-code icon"></i>jQuery</div>
                     <div class="chip"><i class="fab fa-github icon"></i>Git/GitHub</div>
                     <div class="chip"><i class="fas fa-search icon"></i>SEO</div>
@@ -83,115 +83,197 @@
             </button>
         </div>
 
-        <div class="tab-content active" id="project1">
-            <div class="project-image-container">
-                <div class="gallery">
-                    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-                    <div class="slides">
-                        <img src="/assets/mmu-home.jpg" alt="Screenshot 1">
-                        <img src="/assets/mmu-dashboard.jpg" alt="Screenshot 2" style="display: none;">
-                        <img src="/assets/mmu-course.jpg" alt="Screenshot 3" style="display: none;">
-                    </div>
-                    <button class="next" onclick="changeSlide(1)">&#10095;</button>
-                </div>
-            </div>
-            <div class="project-content">
+        <div class="tab-container active" id="project1">
+            <div class="tab-header">
                 <h3>Digital Skills Hub</h3>
                 <div class="icons">
                     <i class="fab fa-wordpress icon" title="WordPress"></i>
                     <i class="fab fa-php icon" title="PHP"></i>
                     <i class="fab fa-html5 icon" title="HTML"></i>
+                    <i class="fab fa-css3-alt icon" title="CSS"></i>
+                    <i class="fab fa-js icon" title="JavaScript"></i>
+                    <i class="fab fa-vuejs icon" title="Vue.js"></i>
+                    <i class="fab fa-github icon" title="GitHub"></i>
                 </div>
-                <p>Developed a WordPress site for Manchester Metropolitan University, focusing on user experience and
-                    accessibility. Implemented custom themes and plugins to enhance functionality.</p>
+            </div>
+            <div class="tab-content">
+                <div class="project-image-container">
+                    <div class="gallery">
+                        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                        <div class="slides">
+                            <img src="/assets/mmu-home.jpg" alt="Screenshot 1">
+                            <img src="/assets/mmu-dashboard.jpg" alt="Screenshot 2" style="display: none;">
+                            <img src="/assets/mmu-course.jpg" alt="Screenshot 3" style="display: none;">
+                        </div>
+                        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <p>
+                        After an initial project partnered with the Department for Work & Pensions, the Digital Skills
+                        Hub
+                        platform was enhanced for Manchester Metropolitan University, providing a range of online
+                        workshops
+                        to their First Generation scholars.
+                    </p>
+                    <p>
+                        The Learning Management System is designed for independent learning. Scholars can progress via
+                        online video workshops and consolidate their knowledge through quizzes and assignments. A
+                        bespoke
+                        20-question career quiz presents students with an overview and resources for suitable career
+                        paths,
+                        based on the responses given. Users can refer back to their answers and retake the quiz at any
+                        time.
+                    </p>
+                    <p>An ‘Opportunities’ listing is regularly updated to signpost relevant events, training courses and
+                        vacancies. The results are filterable with links directly to the websites.
+                    </p>
+                    <p>
+                        The platform is aligned with MMU’s brand guidelines and integrates with their reward points
+                        system,
+                        creating a seamless experience for users.
+                    </p>
+                </div>
             </div>
         </div>
-
-        <div class="tab-content" id="project2">
-            <div class="project-image-container">
-                <div class="gallery">
-                    <button class="prev">&#10094;</button>
-                    <div class="slides">
-                        <img src="/assets/mccallum-home.jpg" alt="McCallum Project Screenshot">
-                        <img src="/assets/mccallum-portfolio.jpg" alt="McCallum Project Screenshot"
-                            style="display: none;">
-                        <img src="/assets/mccallum-casestudy.jpg" alt="McCallum Project Screenshot"
-                            style="display: none;">
-                    </div>
-                    <button class="next">&#10095;</button>
-                </div>
-            </div>
-            <div class="project-content">
+        <div class="tab-container" id="project2">
+            <div class="tab-header">
                 <h3>McCallum</h3>
                 <div class="icons">
-                    <i class="fab fa-react icon" title="React"></i>
-                    <i class="fab fa-node icon" title="Node.js"></i>
-                </div>
-                <p>Developed a modern web application for McCallum, focusing on scalability and performance using React
-                    and Node.js.</p>
-            </div>
-        </div>
-
-        <div class="tab-content" id="project3">
-            <div class="project-image-container">
-                <div class="gallery">
-                    <button class="prev">&#10094;</button>
-                    <div class="slides">
-                        <img src="/assets/sian-home.jpg" alt="Sian Reeves Project Screenshot">
-                        <img src="/assets/sian-acting.jpg" alt="Sian Reeves Project Screenshot" style="display: none;">
-                        <img src="/assets/sian-album.jpg" alt="Sian Reeves Project Screenshot" style="display: none;">
-                    </div>
-                    <button class="next">&#10095;</button>
-                </div>
-            </div>
-            <div class="project-content">
-                <h3>Sian Reeves</h3>
-                <div class="icons">
                     <i class="fab fa-wordpress icon" title="WordPress"></i>
+                    <i class="fab fa-php icon" title="PHP"></i>
+                    <i class="fab fa-html5 icon" title="HTML"></i>
                     <i class="fab fa-css3-alt icon" title="CSS"></i>
-                </div>
-                <p>Created a personal portfolio website for Sian Reeves, showcasing her work and achievements with a
-                    clean and elegant design.</p>
-            </div>
-        </div>
-
-        <div class="tab-content" id="project4">
-            <div class="project-image-container">
-                <img src="/assets/sf-home.jpg" alt="SharpFutures Project Screenshot">
-            </div>
-            <div class="project-content">
-                <h3>SharpFutures</h3>
-                <div class="icons">
-                    <i class="fab fa-vuejs icon" title="Vue.js"></i>
-                    <i class="fab fa-laravel icon" title="Laravel"></i>
-                </div>
-                <p>Developed a web platform for SharpFutures to manage creative projects and collaborations using Vue.js
-                    and Laravel.</p>
-            </div>
-        </div>
-
-        <div class="tab-content" id="project5">
-            <div class="project-image-container">
-                <div class="gallery">
-                    <button class="prev">&#10094;</button>
-                    <div class="slides">
-                        <img src="/assets/screen-home.jpg" alt="Screen Manchester Project Screenshot">
-                        <img src="/assets/screen-lotm.jpg" alt="Screen Manchester Project Screenshot"
-                            style="display: none;">
-                        <img src="/assets/screen-fotm.jpg" alt="Screen Manchester Project Screenshot"
-                            style="display: none;">
-                    </div>
-                    <button class="next">&#10095;</button>
-                </div>
-            </div>
-            <div class="project-content">
-                <h3>Screen Manchester</h3>
-                <div class="icons">
-                    <i class="fab fa-bootstrap icon" title="Bootstrap"></i>
                     <i class="fab fa-js icon" title="JavaScript"></i>
                 </div>
-                <p>Designed and developed a responsive website for Screen Manchester, highlighting their services and
-                    portfolio.</p>
+            </div>
+            <div class="tab-content">
+                <div class="project-image-container">
+                    <div class="gallery">
+                        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                        <div class="slides">
+                            <img src="/assets/mccallum-home.jpg" alt="McCallum Project Screenshot">
+                            <img src="/assets/mccallum-portfolio.jpg" alt="McCallum Project Screenshot"
+                                style="display: none;">
+                            <img src="/assets/mccallum-casestudy.jpg" alt="McCallum Project Screenshot"
+                                style="display: none;">
+                        </div>
+                        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <p>
+                        Publicist Iain McCallum required an online portfolio to showcase their work. The aim of the
+                        website
+                        was to highlight Iain’s passion for giving voices to people who may not ordinarily be heard, as
+                        shown in his work on The A Word and Ralph & Katie.
+                    </p>
+                    <p>
+                        Iain’s digital brand was created from scratch, giving me full creative freedom with the design
+                        of
+                        the website. My aim of the design was to match Iain’s personality, ultimately opting for a
+                        combination of stylishness and boldness, as shown through the choice of shapes and colour
+                        scheme.
+                    </p>
+                    <p>
+                        The homepage presents a range of recognisable faces and productions, using a continuous rotating
+                        slider. To endorse Iain’s work, a testimonials section was developed, featuring a number of
+                        credible
+                        names.
+                    </p>
+                    <p>
+                        Case studies give a detailed insight into Iain’s experience in some of his proudest projects
+                        which
+                        are displayed in the form of a carousel. In addition to his past work, Iain wanted to show his
+                        current and ongoing projects, which has been created as its own page.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="tab-container" id="project3">
+            <div class="tab-header">
+                <h3>Siân Reeves</h3>
+                <div class="icons">
+                    <i class="fab fa-wordpress icon" title="WordPress"></i>
+                    <i class="fab fa-php icon" title="PHP"></i>
+                    <i class="fab fa-html5 icon" title="HTML"></i>
+                    <i class="fab fa-css3-alt icon" title="CSS"></i>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div class="project-image-container">
+                    <div class="gallery">
+                        <button class="prev">&#10094;</button>
+                        <div class="slides">
+                            <img src="/assets/sian-home.jpg" alt="Sian Reeves Project Screenshot">
+                            <img src="/assets/sian-acting.jpg" alt="Sian Reeves Project Screenshot"
+                                style="display: none;">
+                            <img src="/assets/sian-album.jpg" alt="Sian Reeves Project Screenshot"
+                                style="display: none;">
+                        </div>
+                        <button class="next">&#10095;</button>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <p>Created a personal portfolio website for Sian Reeves, showcasing her work and achievements with a
+                        clean and elegant design.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-container" id="project4">
+            <div class="tab-header">
+                <h3>SharpFutures</h3>
+                <div class="icons">
+                    <i class="fab fa-wordpress icon" title="WordPress"></i>
+                    <i class="fab fa-php icon" title="PHP"></i>
+                    <i class="fab fa-html5 icon" title="HTML"></i>
+                    <i class="fab fa-css3-alt icon" title="CSS"></i>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div class="project-image-container">
+                    <img src="/assets/sf-home.jpg" alt="SharpFutures Project Screenshot">
+                </div>
+                <div class="project-content">
+                    <p>Developed a web platform for SharpFutures to manage creative projects and collaborations using
+                        Vue.js
+                        and Laravel.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-container" id="project5">
+            <div class="tab-header">
+                <h3>Screen Manchester</h3>
+                <div class="icons">
+                    <i class="fab fa-wordpress icon" title="WordPress"></i>
+                    <i class="fab fa-php icon" title="PHP"></i>
+                    <i class="fab fa-html5 icon" title="HTML"></i>
+                    <i class="fab fa-css3-alt icon" title="CSS"></i>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div class="project-image-container">
+                    <div class="gallery">
+                        <button class="prev">&#10094;</button>
+                        <div class="slides">
+                            <img src="/assets/screen-home.jpg" alt="Screen Manchester Project Screenshot">
+                            <img src="/assets/screen-lotm.jpg" alt="Screen Manchester Project Screenshot"
+                                style="display: none;">
+                            <img src="/assets/screen-fotm.jpg" alt="Screen Manchester Project Screenshot"
+                                style="display: none;">
+                        </div>
+                        <button class="next">&#10095;</button>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <p>Designed and developed a responsive website for Screen Manchester, highlighting their services
+                        and
+                        portfolio.</p>
+                </div>
             </div>
         </div>
     </section>

@@ -200,7 +200,7 @@ body section:nth-child(odd) {
 }
 
 /* Tab content */
-.tab-content {
+.tab-container {
     display: none;
     text-align: center;
     max-width: 1200px;
@@ -208,6 +208,13 @@ body section:nth-child(odd) {
     background-color: #fff;
     border-radius: 16px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.tab-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap-reverse;
 }
 
@@ -222,22 +229,22 @@ body section:nth-child(odd) {
     display: flex;
 }
 
-.tab-content img {
+.tab-container img {
     max-width: 100%;
     border-radius: 8px;
 }
 
-.tab-content h3 {
+.tab-container h3 {
     color: #042a51;
     /* Dark navy blue */
 }
-.tab-content p {
+.tab-container p {
     color: #333;
     /* Dark text color for paragraphs */
 }
 
-.tab-content.active {
-    display: flex;
+.tab-container.active {
+    display: block;
 }
 
 /* Gallery */

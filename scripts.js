@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const tabs = document.querySelectorAll(".tab");
-    const tabContents = document.querySelectorAll(".tab-content");
+    const tabContents = document.querySelectorAll(".tab-container");
 
     // Tab switching functionality
     tabs.forEach(tab => {

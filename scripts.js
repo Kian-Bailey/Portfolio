@@ -1,50 +1,26 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const tabs = document.querySelectorAll(".tab");
-    const tabContents = document.querySelectorAll(".tab-container");
+function changeSlide(direction) {
+    const galleries = document.querySelectorAll('.gallery');
 
-    // Tab switching functionality
-    tabs.forEach(tab => {
-        tab.addEventListener("click", () => {
-            // Remove active class from all tabs and tab contents
-            tabs.forEach(t => t.classList.remove("active"));
-            tabContents.forEach(content => content.classList.remove("active"));
+    galleries.forEach(gallery => {
+        const slides = gallery.querySelectorAll('.slides img');
+        let currentIndex = Array.from(slides).findIndex(slide => slide.style.display !== 'none');
 
-            // Add active class to the clicked tab and its content
-            tab.classList.add("active");
-            const target = document.getElementById(tab.dataset.tab);
-            target.classList.add("active");
-        });
+        // Hide the current slide
+        slides[currentIndex].style.display = 'none';
+
+        // Calculate the next slide index
+        currentIndex = (currentIndex + direction + slides.length) % slides.length;
+
+        // Show the next slide
+        slides[currentIndex].style.display = 'block';
     });
+}
 
-    // Slider functionality
-    tabContents.forEach(tabContent => {
-        const slides = tabContent.querySelectorAll('.slides img');
-        if (slides.length > 0) {
-            let currentSlide = 0;
-
-            const showSlide = (index) => {
-                slides.forEach((slide, i) => {
-                    slide.style.display = i === index ? 'block' : 'none';
-                });
-            };
-
-            const prevButton = tabContent.querySelector('.prev');
-            const nextButton = tabContent.querySelector('.next');
-
-            if (prevButton && nextButton) {
-                prevButton.addEventListener('click', () => {
-                    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-                    showSlide(currentSlide);
-                });
-
-                nextButton.addEventListener('click', () => {
-                    currentSlide = (currentSlide + 1) % slides.length;
-                    showSlide(currentSlide);
-                });
-
-                // Initialize the first slide
-                showSlide(currentSlide);
-            }
-        }
-    });
+// Initialise the first slide for all galleries
+document.querySelectorAll('.gallery').forEach(gallery => {
+    const slides = gallery.querySelectorAll('.slides img');
+    if (slides.length > 0) {
+        slides.forEach(slide => (slide.style.display = 'none'));
+        slides[0].style.display = 'block';
+    }
 });

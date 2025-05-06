@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Developer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -14,9 +15,9 @@
     <script src="scripts.js" defer></script>
 </head>
 
-<body>
+<body class="fadeIn">
     <section class="about">
-        <h1>Hi, I'm Kian Bailey</h1>
+        <h1>Hi, I'm Kian</h1>
         <h2>Web developer based in Manchester with expertise in WordPress and front-end development.</h2>
         <p>Over 3 years of commercial experience in the industry, delivering varied high-quality products with a strong
             focus on user experience and accessibility.</p>
@@ -25,20 +26,16 @@
     <section class="skills">
         <h2>Skills</h2>
         <div class="skills-container">
-            <div>
-                <h3>Technical Skills</h3>
+            <div class="slideUp">
+                <h3>Front End Development</h3>
                 <div class="chips">
                     <div class="chip"><i class="fab fa-html5 icon"></i>HTML</div>
-                    <div class="chip"><i class="fab fa-css3-alt icon"></i>CSS</div>
                     <div class="chip"><i class="fab fa-js icon"></i>JavaScript</div>
-                    <div class="chip"><i class="fab fa-php icon"></i>PHP</div>
                     <div class="chip"><i class="fab fa-wordpress icon"></i>WordPress</div>
                     <div class="chip"><i class="fab fa-vuejs icon"></i>Vue.js</div>
                     <div class="chip"><i class="fas fa-code icon"></i>jQuery</div>
                     <div class="chip"><i class="fab fa-github icon"></i>Git/GitHub</div>
                     <div class="chip"><i class="fas fa-search icon"></i>SEO</div>
-                    <div class="chip"><i class="fas fa-server icon"></i>cPanel</div>
-                    <div class="chip"><i class="fas fa-file-upload icon"></i>FTP</div>
                     <div class="chip"><i class="fas fa-image icon"></i>Photoshop</div>
                     <div class="chip"><i class="fas fa-drafting-compass icon"></i>Figma</div>
                     <div class="chip"><i class="fas fa-envelope icon"></i>Mailchimp</div>
@@ -48,7 +45,24 @@
                     <div class="chip"><i class="fas fa-database icon"></i>CRM Systems</div>
                 </div>
             </div>
-            <div>
+            <div class="slideUp">
+                <h3>Styling & Design</h3>
+                <div class="chips">
+                    <div class="chip"><i class="fab fa-css3-alt icon"></i>CSS</div>
+                    <div class="chip"><i class="fas fa-image icon"></i>Photoshop</div>
+                    <div class="chip"><i class="fas fa-drafting-compass icon"></i>Figma</div>
+                </div>
+            </div>
+            <div class="slideUp">
+                <h3>Back End Development</h3>
+                <div class="chips">
+                    <div class="chip"><i class="fab fa-php icon"></i>PHP</div>
+                    <div class="chip"><i class="fas fa-server icon"></i>cPanel</div>
+                    <div class="chip"><i class="fas fa-file-upload icon"></i>FTP</div>
+                    <div class="chip"><i class="fas fa-chart-line icon"></i>Google Data Studio</div>
+                </div>
+            </div>
+            <div class="slideUp">
                 <h3>Soft Skills</h3>
                 <div class="chips">
                     <div class="chip"><i class="fas fa-lightbulb icon"></i>Problem Solving</div>
@@ -65,42 +79,28 @@
 
     <section class="projects">
         <h2>Projects</h2>
-        <div class="tabs">
-            <button class="tab active" data-tab="project1">
-                <img src="/Portfolio/assets/mmu-logo.png" alt="Digital Skills Hub Logo" class="tab-icon">
-            </button>
-            <button class="tab" data-tab="project2">
-                <img src="/Portfolio/assets/mccallum-logo.png" alt="McCallum Logo" class="tab-icon">
-            </button>
-            <button class="tab" data-tab="project3">
-                <img src="/Portfolio/assets/sian-logo.png" alt="Sian Reeves Logo" class="tab-icon">
-            </button>
-            <button class="tab" data-tab="project4">
-                <img src="/Portfolio/assets/screen-logo.png" alt="Screen Manchester Logo" class="tab-icon">
-            </button>
-        </div>
-
-        <div class="tab-container active" id="project1">
-            <div class="tab-header">
-                <h3>Digital Skills Hub</h3>
-                <div class="icons">
-                    <i class="fab fa-wordpress icon" title="WordPress"></i>
-                    <i class="fab fa-php icon" title="PHP"></i>
-                    <i class="fab fa-html5 icon" title="HTML"></i>
-                    <i class="fab fa-css3-alt icon" title="CSS"></i>
-                    <i class="fab fa-js icon" title="JavaScript"></i>
-                    <i class="fab fa-vuejs icon" title="Vue.js"></i>
-                    <i class="fab fa-github icon" title="GitHub"></i>
+        <div class="projects-container">
+            <div class="project-item">                
+                <div class="project-background" style="background:linear-gradient(180deg, #2220 0, #332900cc 70%);">
+                    <div class="project-background-image" style="background-image: url('https://staging.digitalskillshub.uk/wp-content/uploads/2024/12/DSH-Banner-frame-1.jpg');"></div>
                 </div>
-            </div>
-            <div class="tab-content">
-                <div class="project-image-container">
+                <div class="project-item-header">
+                    <h3>Digital Skills Hub</h3>
+                    <div class="icons">
+                        <i class="fab fa-wordpress icon" title="WordPress"></i>
+                        <i class="fab fa-php icon" title="PHP"></i>
+                        <i class="fab fa-html5 icon" title="HTML"></i>
+                        <i class="fab fa-css3-alt icon" title="CSS"></i>
+                    </div>
+                </div>
+                <div class="project-item-content">
+                    <div class="project-image-container">
                     <div class="gallery">
                         <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
                         <div class="slides">
-                            <img src="/Portfolio/assets/mmu-home.jpg" alt="Screenshot 1">
-                            <img src="/Portfolio/assets/mmu-dashboard.jpg" alt="Screenshot 2" style="display: none;">
-                            <img src="/Portfolio/assets/mmu-course.jpg" alt="Screenshot 3" style="display: none;">
+                            <img src="/Portfolio/assets/mmu-home.jpg" alt="Digital Skills Hub Homepage Screenshot">
+                            <img src="/Portfolio/assets/mmu-dashboard.jpg" alt="Digital Skills Hub Dashboard Screenshot" style="display: none;">
+                            <img src="/Portfolio/assets/mmu-course.jpg" alt="Digital Skills Hub Course Page Screenshot" style="display: none;">
                         </div>
                         <button class="next" onclick="changeSlide(1)">&#10095;</button>
                     </div>
@@ -119,111 +119,116 @@
                         The platform is aligned with MMU’s brand guidelines and integrates with their reward points system, creating a seamless experience for users.
                     </p>
                 </div>
-            </div>
-        </div>
-        <div class="tab-container" id="project2">
-            <div class="tab-header">
-                <h3>McCallum</h3>
-                <div class="icons">
-                    <i class="fab fa-wordpress icon" title="WordPress"></i>
-                    <i class="fab fa-php icon" title="PHP"></i>
-                    <i class="fab fa-html5 icon" title="HTML"></i>
-                    <i class="fab fa-css3-alt icon" title="CSS"></i>
-                    <i class="fab fa-js icon" title="JavaScript"></i>
                 </div>
             </div>
-            <div class="tab-content">
-                <div class="project-image-container">
+            <div class="project-item">
+                <div class="project-background" style="background:linear-gradient(#2220 0px, #302703cc 70%)">
+                    <div class="project-background-image" style="background-image: url('https://mccallum.tv/wp-content/uploads/2023/04/Iain-02.png');"></div>
+                </div>
+                <div class="project-item-header">
+                    <h3>McCallum</h3>
+                    <div class="icons">
+                        <i class="fab fa-wordpress icon" title="WordPress"></i>
+                        <i class="fab fa-php icon" title="PHP"></i>
+                        <i class="fab fa-html5 icon" title="HTML"></i>
+                        <i class="fab fa-css3-alt icon" title="CSS"></i>
+                    </div>
+                </div>
+                <div class="project-item-content">
+                    <div class="project-image-container">
+                        <div class="gallery">
+                            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                            <div class="slides">
+                                <img src="/Portfolio/assets/mccallum-home.jpg" alt="McCallum Homepage Screenshot">
+                                <img src="/Portfolio/assets/mccallum-portfolio.jpg" alt="McCallum Portfolio Screenshot"
+                                    style="display: none;">
+                                <img src="/Portfolio/assets/mccallum-casestudy.jpg" alt="McCallum Case Study Screenshot"
+                                    style="display: none;">
+                            </div>
+                            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <p>
+                            Publicist <a href="https://mccallum.tv/" target="_blank">Iain McCallum</a> required an online portfolio to showcase their work. The aim of the website was to highlight Iain’s passion for giving voices to people who may not ordinarily be heard, as shown in his work on The A Word and Ralph & Katie.
+                        </p>
+                        <p>
+                            Iain’s digital brand was created from scratch, giving me full creative freedom with the design of the website. My aim of the design was to match Iain’s personality, ultimately opting for a combination of stylishness and boldness, as shown through the choice of shapes and colour scheme.
+                        </p>
+                        <p>
+                            The homepage presents a range of recognisable faces and productions, using a continuous rotating slider. To endorse Iain’s work, a testimonials section was developed, featuring a number of credible names.
+                        </p>
+                        <p>
+                            Case studies give a detailed insight into Iain’s experience in some of his proudest projects which are displayed in the form of a carousel. In addition to his past work, Iain wanted to show his current and ongoing projects, which has been created as its own page.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-background" style="background:linear-gradient(180deg, #2220 0, #002f33cc 70%);">
+                    <div class="project-background-image" style="background-image: url('https://sianreeves.co.uk/wp-content/uploads/2024/08/sian-headshot-01.jpg');background-position: 50% 25%;"></div>
+                </div>
+                <div class="project-item-header">
+                    <h3>Siân Reeves</h3>
+                    <div class="icons">
+                        <i class="fab fa-wordpress icon" title="WordPress"></i>
+                        <i class="fab fa-php icon" title="PHP"></i>
+                        <i class="fab fa-html5 icon" title="HTML"></i>
+                        <i class="fab fa-css3-alt icon" title="CSS"></i>
+                    </div>
+                </div>
+                <div class="project-item-content">
+                    <div class="project-image-container">
+                        <div class="gallery">
+                            <button class="prev">&#10094;</button>
+                            <div class="slides">
+                                <img src="/Portfolio/assets/sian-home.jpg" alt="Sian Reeves Homepage Screenshot">
+                                <img src="/Portfolio/assets/sian-acting.jpg" alt="Sian Reeves Acting Page Screenshot"
+                                    style="display: none;">
+                                <img src="/Portfolio/assets/sian-album.jpg" alt="Sian Reeves Album Page Screenshot"
+                                    style="display: none;">
+                            </div>
+                            <button class="next">&#10095;</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <p>
+                            After being recommended by Iain McCallum, <a href="https://sianreeves.co.uk" target="_blank">Siân Reeves</a> came forward with a website proposal to promote her amazing charity album ‘Remember This’ with all proceeds going to the Alzheimer's Society.
+                        </p>
+                        <p>
+                            The single landing page then progressed into a portfolio to highlight her career over several paths, such as her work acting in Emmerdale, Mount Pleasant and several musicals and theatres.
+                        </p>
+                        <p>
+                            Having been granted full creative freedom, I opted to make the website vibrant and colourful, encapsulating Siân's personality. Each page is expressed with different colours, showcasing the array of her different career ventures.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item">                
+                <div class="project-background" style="background:linear-gradient(180deg, #2220 0, #333000cc 70%);">
+                    <div class="project-background-image" style="background-image: url('https://screenmanchester.com/wp-content/uploads/2025/02/Manchester-over-oxford-road-screen-manchester-header-1.jpg');"></div>
+                </div>
+                <div class="project-item-header">
+                    <h3>Screen Manchester</h3>
+                    <div class="icons">
+                        <i class="fab fa-wordpress icon" title="WordPress"></i>
+                        <i class="fab fa-php icon" title="PHP"></i>
+                        <i class="fab fa-html5 icon" title="HTML"></i>
+                        <i class="fab fa-css3-alt icon" title="CSS"></i>
+                    </div>
+                </div>
+                <div class="project-item-content">
+                    <div class="project-image-container">
                     <div class="gallery">
                         <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
                         <div class="slides">
-                            <img src="/Portfolio/assets/mccallum-home.jpg" alt="McCallum Project Screenshot">
-                            <img src="/Portfolio/assets/mccallum-portfolio.jpg" alt="McCallum Project Screenshot"
+                            <img src="/Portfolio/assets/screen-home.jpg" alt="Screen Manchester Project Homepage Screenshot">
+                            <img src="/Portfolio/assets/screen-lotm.jpg" alt="Screen Manchester Project Lcation of the Month Screenshot"
                                 style="display: none;">
-                            <img src="/Portfolio/assets/mccallum-casestudy.jpg" alt="McCallum Project Screenshot"
+                            <img src="/Portfolio/assets/screen-fotm.jpg" alt="Screen Manchester Project Facility of the Month Screenshot"
                                 style="display: none;">
                         </div>
                         <button class="next" onclick="changeSlide(1)">&#10095;</button>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <p>
-                        Publicist <a href="https://mccallum.tv/" target="_blank">Iain McCallum</a> required an online portfolio to showcase their work. The aim of the website was to highlight Iain’s passion for giving voices to people who may not ordinarily be heard, as shown in his work on The A Word and Ralph & Katie.
-                    </p>
-                    <p>
-                        Iain’s digital brand was created from scratch, giving me full creative freedom with the design of the website. My aim of the design was to match Iain’s personality, ultimately opting for a combination of stylishness and boldness, as shown through the choice of shapes and colour scheme.
-                    </p>
-                    <p>
-                        The homepage presents a range of recognisable faces and productions, using a continuous rotating slider. To endorse Iain’s work, a testimonials section was developed, featuring a number of credible names.
-                    </p>
-                    <p>
-                        Case studies give a detailed insight into Iain’s experience in some of his proudest projects which are displayed in the form of a carousel. In addition to his past work, Iain wanted to show his current and ongoing projects, which has been created as its own page.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="tab-container" id="project3">
-            <div class="tab-header">
-                <h3>Siân Reeves</h3>
-                <div class="icons">
-                    <i class="fab fa-wordpress icon" title="WordPress"></i>
-                    <i class="fab fa-php icon" title="PHP"></i>
-                    <i class="fab fa-html5 icon" title="HTML"></i>
-                    <i class="fab fa-css3-alt icon" title="CSS"></i>
-                </div>
-            </div>
-            <div class="tab-content">
-                <div class="project-image-container">
-                    <div class="gallery">
-                        <button class="prev">&#10094;</button>
-                        <div class="slides">
-                            <img src="/Portfolio/assets/sian-home.jpg" alt="Sian Reeves Project Screenshot">
-                            <img src="/Portfolio/assets/sian-acting.jpg" alt="Sian Reeves Project Screenshot"
-                                style="display: none;">
-                            <img src="/Portfolio/assets/sian-album.jpg" alt="Sian Reeves Project Screenshot"
-                                style="display: none;">
-                        </div>
-                        <button class="next">&#10095;</button>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <p>
-                        After being recommended by Iain McCallum, <a href="https://sianreeves.co.uk" target="_blank">Siân Reeves</a> came forward with a website proposal to promote her amazing charity album ‘Remember This’ with all proceeds going to the Alzheimer's Society.
-                    </p>
-                    <p>
-                        The single landing page then progressed into a portfolio to highlight her career over several paths, such as her work acting in Emmerdale, Mount Pleasant and several musicals and theatres.
-                    </p>
-                    <p>
-                        Having been granted full creative freedom, I opted to make the website vibrant and colourful, encapsulating Siân's personality. Each page is expressed with different colours, showcasing the array of her different career ventures.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="tab-container" id="project4">
-            <div class="tab-header">
-                <h3>Screen Manchester</h3>
-                <div class="icons">
-                    <i class="fab fa-wordpress icon" title="WordPress"></i>
-                    <i class="fab fa-php icon" title="PHP"></i>
-                    <i class="fab fa-html5 icon" title="HTML"></i>
-                    <i class="fab fa-css3-alt icon" title="CSS"></i>
-                </div>
-            </div>
-            <div class="tab-content">
-                <div class="project-image-container">
-                    <div class="gallery">
-                        <button class="prev">&#10094;</button>
-                        <div class="slides">
-                            <img src="/Portfolio/assets/screen-home.jpg" alt="Screen Manchester Project Screenshot">
-                            <img src="/Portfolio/assets/screen-lotm.jpg" alt="Screen Manchester Project Screenshot"
-                                style="display: none;">
-                            <img src="/Portfolio/assets/screen-fotm.jpg" alt="Screen Manchester Project Screenshot"
-                                style="display: none;">
-                        </div>
-                        <button class="next">&#10095;</button>
                     </div>
                 </div>
                 <div class="project-content">
@@ -237,7 +242,9 @@
                         As well as maintaining the website, I created and continue to update the email signature template for Screen Manchester’s internal staff, ensuring professionalism across their business.
                     </p>
                 </div>
+                </div>
             </div>
+
         </div>
     </section>
 
@@ -275,16 +282,6 @@
                 <img src="/Portfolio/assets/coop-logo.png" alt="Co-op Logo">
             </a>
         </div>
-    </section>
-
-    <section class="contact">
-        <h2>Contact Me</h2>
-        <form action="#" method="post">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
     </section>
 </body>
 

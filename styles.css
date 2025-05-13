@@ -43,11 +43,12 @@ h2 {
 }
 h3 {
     font-size: 28px;
+    margin-top: 14px;
 }
 
 
 section {
-    padding: 20px;
+    padding: 2%;
     margin: auto;
     animation: slideUp 1s ease-in-out;
     z-index: 0;
@@ -78,11 +79,14 @@ body section:nth-child(even) {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
+    gap: 20px;
 }
 
 .skills-container > div {
     padding: 20px;
     flex-grow: 1;
+    background-color: var(--bg-primary);
+    border-radius: 16px;
 }
 
 .icon {
@@ -107,6 +111,8 @@ body section:nth-child(even) {
     color: var(--text-dark);
     font-size:14px;
     animation: zoomIn 1s ease;
+    width: 150px;
+    flex-direction: column;
 }
 
 .chip:hover {
@@ -119,7 +125,12 @@ body section:nth-child(even) {
 }
 
 .chip .icon {
-    margin-right: 8px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.chip span {
+    margin: auto;
 }
 
 /* Tabs container */
@@ -228,7 +239,7 @@ body section:nth-child(even) {
 }
 
 .slides {
-    border-radius: 8px;
+    border-radius: 16px;
     overflow: hidden;
 }
 

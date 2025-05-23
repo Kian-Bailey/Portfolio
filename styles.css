@@ -204,6 +204,12 @@ button:hover, .button:hover {
     flex-wrap: wrap;
 }
 
+@media (max-width: 576px) {
+    .skills-legend > button {
+        min-width: 35%;
+    }
+}
+
 @media (max-width: 300px) {
     .skills-legend {
         flex-direction: column;

@@ -18,68 +18,69 @@
 </head>
 
 <body class="fadeIn">
-    <section class="about">
-        <h1>Hi, I'm Kian</h1>
-        <h2>Web developer based in Manchester with expertise in WordPress and front-end development.</h2>
-        <p>Over 3 years of commercial experience in the industry, delivering varied high-quality products with a strong
-            focus on user experience and accessibility.</p>
-    </section>
+    <section id="about">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+        <h1>Hi, I'm <span class="highlight">Kian</span></h1>
+        <h2>
+            Web developer based in Manchester<br>
+            Specialising in <span class="highlight">WordPress</span> &amp; <span class="highlight">Front-End</span> Development
+        </h2>
+        <p>
+            Over 3 years of commercial experience in the industry, delivering varied high-quality products with a strong focus on <span class="highlight">user experience</span> and <span class="highlight">accessibility</span>.
 
-    <section class="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="slideUp">
-                <h3>Front End Development</h3>
-                <div class="chips">
-                    <div class="chip"><i class="fab fa-html5 icon"></i><span>HTML</span></div>
-                    <div class="chip"><i class="fab fa-js icon"></i><span>JavaScript</span></div>
-                    <div class="chip"><i class="fab fa-wordpress icon"></i><span>WordPress</span></div>
-                    <div class="chip"><i class="fab fa-vuejs icon"></i><span>Vue.js</span></div>
-                    <div class="chip"><i class="fas fa-code icon"></i><span>jQuery</span></div>
-                    <div class="chip"><i class="fab fa-github icon"></i><span>Git/GitHub</span></div>
-                    <div class="chip"><i class="fas fa-search icon"></i><span>SEO</span></div>
-                    <div class="chip"><i class="fas fa-image icon"></i><span>Photoshop</span></div>
-                    <div class="chip"><i class="fas fa-drafting-compass icon"></i><span>Figma</span></div>
-                    <div class="chip"><i class="fas fa-envelope icon"></i><span>Mailchimp</span></div>
-                    <div class="chip"><i class="fas fa-object-group icon"></i><span>OOP (VB.NET, C#)</span></div>
-                    <div class="chip"><i class="fas fa-table icon"></i><span>Excel</span></div>
-                    <div class="chip"><i class="fas fa-chart-line icon"></i><span>Google Data Studio</span></div>
-                    <div class="chip"><i class="fas fa-database icon"></i><span>CRM Systems</span></div>
-                </div>
-            </div>
-            <div class="slideUp" style="width: 40%;">
-                <h3>Styling & Design</h3>
-                <div class="chips">
-                    <div class="chip"><i class="fab fa-css3-alt icon"></i><span>CSS</span></div>
-                    <div class="chip"><i class="fas fa-image icon"></i><span>Photoshop</span></div>
-                    <div class="chip"><i class="fas fa-drafting-compass icon"></i><span>Figma</span></div>
-                </div>
-            </div>
-            <div class="slideUp" style="width: 40%;">
-                <h3>Back End Development</h3>
-                <div class="chips">
-                    <div class="chip"><i class="fab fa-php icon"></i><span>PHP</span></div>
-                    <div class="chip"><i class="fas fa-server icon"></i><span>cPanel</span></div>
-                    <div class="chip"><i class="fas fa-file-upload icon"></i><span>FTP</span></div>
-                    <div class="chip"><i class="fas fa-chart-line icon"></i><span>Google Data Studio</span></div>
-                </div>
-            </div>
-            <div class="slideUp">
-                <h3>Soft Skills</h3>
-                <div class="chips">
-                    <div class="chip"><i class="fas fa-lightbulb icon"></i><span>Problem Solving</span></div>
-                    <div class="chip"><i class="fas fa-brain icon"></i><span>Critical thinking & analysis</span></div>
-                    <div class="chip"><i class="fas fa-comments icon"></i><span>Communication</span></div>
-                    <div class="chip"><i class="fas fa-users icon"></i><span>Teamwork & collaboration</span></div>
-                    <div class="chip"><i class="fas fa-paint-brush icon"></i><span>Creativity</span></div>
-                    <div class="chip"><i class="fas fa-clock icon"></i><span>Time Management</span></div>
-                </div>
-            </div>
+
+        </p>
+        <div class="cta-btns">
+            <a href="#projects" class="button btn-primary">View My Work</a>
+            <a href="#contact" class="button btn-secondary">Get In Touch</a>
         </div>
+    </div>
+</section>
 
-    </section>
+    <section id="skills">
+        <div class="skills-header">
+    <h2>Skills</h2>
+    <div class="skills-legend">
+        <button type="button" class="legend-chip front-end"><i class="fas fa-laptop-code"></i> Front End</button>
+        <button type="button" class="legend-chip back-end"><i class="fas fa-server"></i> Back End</button>
+        <button type="button" class="legend-chip misc"><i class="fas fa-toolbox"></i> Miscellaneous</button>
+        <button type="button" class="legend-chip soft"><i class="fas fa-user-friends"></i> Soft Skills</button>
+    </div>
+    </div>
+    <div class="skills-cloud">
+        <!-- Front End -->
+        <div class="chip front-end"><i class="fab fa-html5 icon"></i><span>HTML</span></div>
+        <div class="chip front-end"><i class="fab fa-css3-alt icon"></i><span>CSS</span></div>
+        <div class="chip front-end"><i class="fab fa-js icon"></i><span>JavaScript</span></div>
+        <div class="chip front-end"><i class="fab fa-wordpress icon"></i><span>WordPress</span></div>
+        <div class="chip front-end"><i class="fab fa-vuejs icon"></i><span>Vue.js</span></div>
+        <div class="chip front-end"><i class="fas fa-code icon"></i><span>jQuery</span></div>
+        <div class="chip front-end"><i class="fab fa-github icon"></i><span>Git/GitHub</span></div>
+        <!-- Back End -->
+        <div class="chip back-end"><i class="fab fa-php icon"></i><span>PHP</span></div>
+        <div class="chip back-end"><i class="fas fa-object-group icon"></i><span>OOP (VB.NET, C#)</span></div>
+        <div class="chip back-end"><i class="fas fa-server icon"></i><span>cPanel</span></div>
+        <div class="chip back-end"><i class="fas fa-file-upload icon"></i><span>FTP</span></div>
+        <!-- Miscellaneous -->
+        <div class="chip misc"><i class="fas fa-image icon"></i><span>Photoshop</span></div>
+        <div class="chip misc"><i class="fas fa-drafting-compass icon"></i><span>Figma</span></div>
+        <div class="chip misc"><i class="fas fa-search icon"></i><span>SEO</span></div>
+        <div class="chip misc"><i class="fas fa-envelope icon"></i><span>Mailchimp</span></div>
+        <div class="chip misc"><i class="fas fa-chart-line icon"></i><span>Google Data Studio</span></div>
+        <div class="chip misc"><i class="fas fa-database icon"></i><span>CRM Systems</span></div>
+        <div class="chip misc"><i class="fas fa-table icon"></i><span>Excel</span></div>
+        <!-- Soft Skills -->
+        <div class="chip soft"><i class="fas fa-lightbulb icon"></i><span>Problem Solving</span></div>
+        <div class="chip soft"><i class="fas fa-brain icon"></i><span>Critical thinking & analysis</span></div>
+        <div class="chip soft"><i class="fas fa-comments icon"></i><span>Communication</span></div>
+        <div class="chip soft"><i class="fas fa-users icon"></i><span>Teamwork & collaboration</span></div>
+        <div class="chip soft"><i class="fas fa-paint-brush icon"></i><span>Creativity</span></div>
+        <div class="chip soft"><i class="fas fa-clock icon"></i><span>Time Management</span></div>
+    </div>
+</section>
 
-    <section class="projects">
+    <section id="projects">
         <h2>Projects</h2>
         <div class="projects-container">
             <div class="project-item">                
@@ -98,14 +99,15 @@
                 <div class="project-item-content">
                     <div class="project-image-container">
                     <div class="gallery">
-                        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                        <button class="prev" onclick="changeSlide(-1, this)">&#10094;</button>
                         <div class="slides">
                             <img src="assets/mmu-home.jpg" alt="Digital Skills Hub Homepage Screenshot">
                             <img src="assets/mmu-dashboard.jpg" alt="Digital Skills Hub Dashboard Screenshot" style="display: none;">
                             <img src="assets/mmu-course.jpg" alt="Digital Skills Hub Course Page Screenshot" style="display: none;">
                         </div>
-                        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                        <button class="next" onclick="changeSlide(1, this)">&#10095;</button>
                     </div>
+                    <a href="https://mmu.digitalskillshub.co.uk/" target="_blank" class="button btn-primary">Visit Site</a>
                 </div>
                 <div class="project-content">
                     <p>
@@ -139,7 +141,7 @@
                 <div class="project-item-content">
                     <div class="project-image-container">
                         <div class="gallery">
-                            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                            <button class="prev" onclick="changeSlide(-1, this)">&#10094;</button>
                             <div class="slides">
                                 <img src="assets/mccallum-home.jpg" alt="McCallum Homepage Screenshot">
                                 <img src="assets/mccallum-portfolio.jpg" alt="McCallum Portfolio Screenshot"
@@ -147,8 +149,9 @@
                                 <img src="assets/mccallum-casestudy.jpg" alt="McCallum Case Study Screenshot"
                                     style="display: none;">
                             </div>
-                            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                            <button class="next" onclick="changeSlide(1, this)">&#10095;</button>
                         </div>
+                    <a href="https://mccallum.tv/" target="_blank" class="button btn-primary">Visit Site</a>
                     </div>
                     <div class="project-content">
                         <p>
@@ -182,7 +185,7 @@
                 <div class="project-item-content">
                     <div class="project-image-container">
                         <div class="gallery">
-                            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                            <button class="prev" onclick="changeSlide(-1, this)">&#10094;</button>
                             <div class="slides">
                                 <img src="assets/sian-home.jpg" alt="Sian Reeves Homepage Screenshot">
                                 <img src="assets/sian-acting.jpg" alt="Sian Reeves Acting Page Screenshot"
@@ -190,8 +193,9 @@
                                 <img src="assets/sian-album.jpg" alt="Sian Reeves Album Page Screenshot"
                                     style="display: none;">
                             </div>
-                            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                            <button class="next" onclick="changeSlide(1, this)">&#10095;</button>
                         </div>
+                        <a href="https://sianreeves.co.uk/" target="_blank" class="button btn-primary">Visit Site</a>
                     </div>
                     <div class="project-content">
                         <p>
@@ -222,7 +226,7 @@
                 <div class="project-item-content">
                     <div class="project-image-container">
                     <div class="gallery">
-                        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                        <button class="prev" onclick="changeSlide(-1, this)">&#10094;</button>
                         <div class="slides">
                             <img src="assets/screen-home.jpg" alt="Screen Manchester Project Homepage Screenshot">
                             <img src="assets/screen-lotm.jpg" alt="Screen Manchester Project Lcation of the Month Screenshot"
@@ -230,8 +234,9 @@
                             <img src="assets/screen-fotm.jpg" alt="Screen Manchester Project Facility of the Month Screenshot"
                                 style="display: none;">
                         </div>
-                        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                        <button class="next" onclick="changeSlide(1, this)">&#10095;</button>
                     </div>
+                    <a href="https://screenmanchester.com/" target="_blank" class="button btn-primary">Visit Site</a>
                 </div>
                 <div class="project-content">
                     <p>
@@ -285,6 +290,10 @@
             </a>
         </div>
     </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you would like to get in touch, please contact me via email at <a href="mailto:kianbailey@hotmail.co.uk">kianbailey@hotmail.co.uk</a></p>
+        </section>
 </body>
 
 </html>

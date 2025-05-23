@@ -176,7 +176,7 @@ button:hover, .button:hover {
 .cta-btns {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 24px;
     flex-wrap: wrap;
 }
 
@@ -200,9 +200,17 @@ button:hover, .button:hover {
 .skills-legend {
     display: flex;
     justify-content: center;
-    gap: 18px;
+    gap: 12px;
     flex-wrap: wrap;
 }
+
+@media (max-width: 300px) {
+    .skills-legend {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .legend-chip {
     display: inline-flex;
     align-items: center;
@@ -506,6 +514,15 @@ button.next { right: 10px; }
 }
 
 /* --- 5. Clients Section --- */
+
+#clients h2 {
+    z-index: 3;
+    background-color: var(--bg-secondary);
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 12px 12px var(--bg-secondary);
+}
+
 .client-logos {
     display: flex;
     justify-content: space-evenly;
@@ -540,6 +557,18 @@ button.next { right: 10px; }
     width: 80%;
     height: 80%;
     object-fit: contain;
+}
+
+@media (max-width: 576px) {
+    .client-logo {
+        width: 40%;
+        min-width: unset;
+    }
+
+    .client-logo img {
+        width: 90%;
+        height: 90%;
+    }
 }
 
 /* --- 6. Contact Section --- */

@@ -1,11 +1,11 @@
 /* --- 1. Global Styles & Variables --- */
 :root {
-    --accent-primary: #ffd700;
-    --bg-primary: #171821;
-    --bg-secondary: #212831;
-    --hero-gradient-2: #4fb1d1;
-    --hero-gradient-1: #7B38CC;
-    --text-light: #fafafa;
+    --accent-primary: #e8bd33;
+    --bg-primary: #0d1a22;
+    --bg-secondary: #0a1318;
+    --hero-gradient-2: #0d1920;
+    --hero-gradient-1: #216994;
+    --text-light: #ecf3f6;
     --text-dark: #171821;
     scroll-behavior: smooth;
 }

@@ -109,6 +109,9 @@ button:hover, .button:hover {
     background: none;
 }
 
+.cky-btn-revisit-wrapper .cky-btn-revisit img {
+    filter: invert(1);
+}
 
 /* --- 2. Hero Section --- */
 #about {

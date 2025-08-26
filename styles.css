@@ -531,6 +531,10 @@ button.next { right: 10px; }
 
 /* --- 5. Clients Section --- */
 
+#clients {
+    z-index: 1;
+}
+
 #clients h2 {
     z-index: 3;
     background-color: var(--bg-secondary);
